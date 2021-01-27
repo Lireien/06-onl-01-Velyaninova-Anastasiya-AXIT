@@ -1,0 +1,171 @@
+.contact {
+  width: 100%;
+  /* margin-top: 80px; */
+}
+.contact-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.contact-head {
+  text-align: center;
+}
+.contact-head_title {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 42.26px;
+  color: #212121;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+  padding-top: 80px;
+}
+.contact-head_title::after {
+  content: '';
+  display: block;
+  margin: 34px auto 34px auto;
+  width: 64px;
+  height: 2px;
+  background-color: #e72424;
+}
+.contact-head_description {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 19.07px;
+  color: #86878b;
+}
+
+.contact-form_container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.customers-form_part {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0 15px 69px 15px;
+}
+.contact-form_label {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 19.07px;
+  margin-top: 20px;
+  color: #bdbdbd;
+  margin: 0;
+  padding: 32px 0 17px 0;
+}
+.contact-name,
+.contact-email,
+.contact-password {
+  border: 0;
+  border-bottom: 1px solid #bdbdbd;
+  width: 478px;
+  padding: 0 5px;
+  font-size: 16px;
+}
+.contact-name:focus,
+.contact-email:focus,
+.contact-password:focus {
+  outline: none;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.message-form_part {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0 20px 69px 20px;
+  border: 0;
+  border-bottom: 1px solid #bdbdbd;
+  width: 478px;
+  padding: 0 5px;
+}
+
+.contact-form_message-text {
+  border: none;
+  /* outline: none; */
+  resize: none;
+  height: 90%;
+  margin: 0;
+  font-size: 16px;
+}
+
+.contact-form_message-text:focus {
+  outline: none;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.btn {
+  display: block;
+  margin: 0 auto;
+  width: 166px;
+  padding: 11px;
+  background-color: #ec7979;
+  font-family: 'Open Sans';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: capitalize;
+  text-align: center;
+  border: 1px solid #ffffff;
+  margin-bottom: 44px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  animation: blink 1s 0.2s infinite alternate;
+}
+@keyframes blink {
+  from {
+    color: #ffffff;
+  }
+  to {
+    color: #ec7979;
+  }
+  from {
+    background-color: #ec7979;
+  }
+  to {
+    background-color: #ffffff;
+  }
+}
+
+.btn:active {
+  outline: none;
+  background-color: #ffffff;
+  color: #ec7979;
+}
+
+/* Adaptive */
+@media (max-width: 768px) {
+  .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+  .customers-form_part {
+    width: 100%;
+  }
+  .contact-name,
+  .contact-email,
+  .contact-password {
+    width: 85%;
+    /* max-width: 320px; */
+  }
+  .contact-form_label{
+    margin: 0 auto;
+  }
+  .message-form_part{
+    width: 85%;
+    /* max-width: 320px; */
+  }
+
+}
