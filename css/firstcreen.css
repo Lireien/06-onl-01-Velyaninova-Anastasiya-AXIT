@@ -37,6 +37,7 @@
 .axit-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 60px 0;
   width: 100%;
 }
