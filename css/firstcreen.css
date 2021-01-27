@@ -34,7 +34,7 @@
   flex-wrap: nowrap;
   flex-direction: row;
 }
-.axit-box{
+.axit-box {
   display: flex;
   justify-content: space-between;
   padding: 60px 0;
@@ -112,7 +112,7 @@
 }
 
 .axit-form_box {
-  margin-top:80px;
+  margin-top: 80px;
   max-width: 370px;
   /* height: 370px; */
   display: flex;
@@ -229,11 +229,8 @@
     margin: 5vh auto;
   }
   .axit-form_box {
-    margin: 5vh auto;
+    margin: 20px auto;
     width: 95%;
     max-width: 320px;
-  }
-  .axit-form_button {
-    /* margin-top: 5vh; */
   }
 }
